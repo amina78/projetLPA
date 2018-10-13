@@ -1,3 +1,11 @@
-<p>
-  pizza-detail works!
-</p>
+<div *ngIf="pizza">
+  <h2>{{pizza.name | uppercase}}</h2>
+  <div><img src="{{pizza.url}}"/></div>
+  <div>
+    <label>name:
+     
+    </label>Prix:
+    {{pizza.price}}
+  </div>
+  <button (click)="goBack()">go back</button>
+</div>
