@@ -4,6 +4,6 @@
       <p>{{pizza.price}} €</p>
   </div>
   <div class="col">
-    <img [src]="pizza.url">
+   <a routerLink="/pizzas/{{pizza.id}}" > <img [src]="pizza.url" /></a>
   </div>
 </div>
